@@ -12,7 +12,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "slicemachine": "start-slicemachine",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@prismicio/client": "^6.7.1",
