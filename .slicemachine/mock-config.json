@@ -111,12 +111,5 @@
         "primary": {}
       }
     }
-  },
-  "src/slices": {
-    "ContactBlock": {
-      "default": {
-        "primary": {}
-      }
-    }
   }
 }
