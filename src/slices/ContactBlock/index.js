@@ -1,8 +1,8 @@
-import { Bounded } from "../../components/Bounded";
+//import { Bounded } from "../../components/Bounded";
 //import * as prismicH from "@prismicio/helpers";
 import { PrismicRichText } from "@prismicio/react";
 
-
+/*
 const ContactBlock = ({ slice }) => {
   const image = slice.primary.title;
 
@@ -15,8 +15,8 @@ const ContactBlock = ({ slice }) => {
       </figure>
     </Bounded>
   );
-};
-// todo: repater type field
+};*/
+
 /*
 const ContactBlockRepeater = () => {
   const name = slice.items[i].name;
@@ -55,4 +55,26 @@ const ContactBlockRepeater = () => {
   );
 };
 */
+
+
+import React from 'react';
+//repater type field
+const ContactBlock = ({ slice }) => {
+  const { primary, items } = slice;
+
+  return (
+    <div>
+      <h1>{primary.title}</h1>
+      <ul>
+        {Object.values(items).map((item, index) => (
+          <li key={index}>
+            <strong>{item.config.label}: </strong>
+            {item.value}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
 export default ContactBlock;
