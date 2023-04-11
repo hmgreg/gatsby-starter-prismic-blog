@@ -30,7 +30,6 @@ module.exports = {
   siteMetadata: {
     title: `Blog`,
     siteUrl: `https://www.yourdomain.tld`,
-    pathPrefix: "/gatsby-starter-prismic-blog",
   },
   jsxRuntime: "automatic",
   plugins: [
