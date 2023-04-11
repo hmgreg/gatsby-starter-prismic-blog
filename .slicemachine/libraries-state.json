@@ -87,8 +87,8 @@
           }
         },
         "meta": {
-          "fileName": null,
-          "extension": null
+          "fileName": "index",
+          "extension": "js"
         },
         "screenshotPaths": {}
       },
