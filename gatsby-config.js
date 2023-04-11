@@ -38,7 +38,7 @@ module.exports = {
     {
       resolve: "gatsby-source-prismic",
       options: {
-        repositoryName: "nextjs-starter-prismic-blog",
+        repositoryName: "prismic-blog-tester",
         customTypeModels,
         sharedSliceModels,
         routes,
@@ -47,7 +47,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-prismic-previews",
       options: {
-        repositoryName: "nextjs-starter-prismic-blog",
+        repositoryName: "prismic-blog-tester",
         routes,
       },
     },
