@@ -2,7 +2,7 @@ import { Bounded } from "../../components/Bounded";
 //import * as prismicH from "@prismicio/helpers";
 import { PrismicRichText } from "@prismicio/react";
 
-
+/*
 const ContactBlock = ({ slice }) => {
   const image = slice.primary.title;
 
@@ -15,7 +15,7 @@ const ContactBlock = ({ slice }) => {
       </figure>
     </Bounded>
   );
-};
+};*/
 // todo: repater type field
 /*
 const ContactBlockRepeater = () => {
@@ -55,4 +55,12 @@ const ContactBlockRepeater = () => {
   );
 };
 */
+
+const ContactBlock = ({ data }) => {
+  return (
+    <div>
+      {data && <h1>{data.title}</h1>}
+    </div>
+  );
+};
 export default ContactBlock;
